@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChromaFix（クロマフィックス）｜靴メーカーのためのAI色補正サービス</title>
+  <meta name="description" content="ChromaFix（クロマフィックス）は、AIを最大限に活用した靴専門の商品画像 色補正サービスです。形やロゴを描き換えず色だけを補正。月額25万円の定額制で、社内で担当者を雇用する場合と比べ年間100万円以上のコスト削減に。初回3枚まで無料トライアル。">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ▼ 公開ドメインが決まったら https://example.com を差し替えてください（README参照） -->
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ChromaFix">
+  <meta property="og:title" content="ChromaFix｜靴メーカーのためのAI色補正サービス">
+  <meta property="og:description" content="靴の色補正を、AIで。形を変えずに色だけを直すAIで、社内で担当者を雇用する場合と比べ年間100万円以上のコスト削減へ。初回3枚まで無料。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/img/ogp.png">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@600;800&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-after.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <div class="colorbar" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="ChromaFix トップへ">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="13" height="13" rx="3" fill="#E4572E"/><rect x="17" y="2" width="13" height="13" rx="3" fill="#F2B632"/><rect x="2" y="17" width="13" height="13" rx="3" fill="#1580B7"/><rect x="17" y="17" width="13" height="13" rx="3" fill="#8A8D91"/></svg>
+        <span class="brand__text">
+          <span class="brand__name">ChromaFix</span>
+          <span class="brand__kana">クロマフィックス</span>
+        </span>
+      </a>
+
+      <nav class="gnav" id="gnav" aria-label="メインメニュー" data-nav>
+        <ul class="gnav__list">
+          <li><a href="#cost">コスト比較</a></li>
+          <li><a href="#ai">AI補正のしくみ</a></li>
+          <li><a href="#cases">補正事例</a></li>
+          <li><a href="#parts">靴専門の理由</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm gnav__cta" href="#contact">無料で3枚試す</a>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-controls="gnav" aria-expanded="false" aria-label="メニューを開く" data-menu-btn>
+        <span class="menu-btn__bar"></span><span class="menu-btn__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="hero__eyebrow"><span class="tag">靴メーカー・靴ブランド向け</span>AI色補正サービス</p>
+          <h1 class="hero__title">靴の色補正を、AIで。<br><span class="hl">年間100万円以上</span>の<br>コスト削減へ。<sup class="hero__ref">※</sup></h1>
+          <p class="hero__lead">
+            クロマフィックスは、AIを最大限に活用した靴専門の色補正サービスです。
+            月額25万円（税別）の定額制で、社内で担当者を抱えるよりも大幅に低いコストのまま、商品画像を実物どおりの色に仕上げます。
+            写真を描き直さず<strong>「色だけを直すAI」</strong>だから、形が歪む心配もありません。
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contact">
+              無料で3枚試してみる
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#cost">コストを比較する</a>
+          </div>
+          <ul class="hero__points">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>初回3枚 無料トライアル</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>形を変えない色補正AI</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>月額25万円の定額制</li>
+          </ul>
+          <p class="hero__note">※社内で色補正の担当者1名（手取り月35万円）を雇用している場合と比較した試算です。</p>
+        </div>
+
+        <figure class="hero__visual">
+          <div class="frame">
+            <i class="tombo tombo--tl" aria-hidden="true"></i><i class="tombo tombo--tr" aria-hidden="true"></i>
+            <i class="tombo tombo--bl" aria-hidden="true"></i><i class="tombo tombo--br" aria-hidden="true"></i>
+            <div class="ba ba--square" data-ba data-ba-hint>
+              <img class="ba__img" src="assets/img/hero-after.webp" width="1200" height="1200" alt="補正後：アッパーの青、白いソール、白背景が実物どおりに再現された画像" fetchpriority="high">
+              <div class="ba__before">
+                <img class="ba__img" src="assets/img/hero-before.webp" width="1200" height="1200" alt="補正前：電球色の照明で全体が黄色くかぶった画像">
+              </div>
+              <span class="ba__label ba__label--before">BEFORE</span>
+              <span class="ba__label ba__label--after">AFTER</span>
+              <div class="ba__handle" role="slider" tabindex="0" aria-label="補正前と補正後の比較スライダー" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+          </div>
+          <figcaption class="readout">
+            <p class="readout__title"><span class="mono">SAMPLE</span>形はそのまま、色だけを補正</p>
+            <dl class="readout__list">
+              <div class="readout__row"><dt>アッパー</dt><dd><span class="sw" style="--c:#246F7C"></span><span class="mono">#246F7C</span><span class="readout__arrow" aria-label="から">→</span><span class="sw" style="--c:#1580B7"></span><span class="mono">#1580B7</span></dd></div>
+              <div class="readout__row"><dt>ソール</dt><dd><span class="sw" style="--c:#D9CDAC"></span><span class="mono">#D9CDAC</span><span class="readout__arrow" aria-label="から">→</span><span class="sw" style="--c:#EFEFEF"></span><span class="mono">#EFEFEF</span></dd></div>
+              <div class="readout__row"><dt>背景</dt><dd><span class="sw" style="--c:#E7DAB7"></span><span class="mono">#E7DAB7</span><span class="readout__arrow" aria-label="から">→</span><span class="sw" style="--c:#FFFFFF"></span><span class="mono">#FFFFFF</span></dd></div>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="genres" aria-label="対応ジャンル">
+        <p class="genres__label mono">WE CORRECT</p>
+        <ul class="genres__list">
+          <li>スニーカー</li><li>革靴・ビジネスシューズ</li><li>パンプス</li><li>ブーツ</li><li>サンダル</li><li>ケミカルシューズ</li><li>キッズシューズ</li><li>バッグ・革小物</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMS ============ -->
+    <section class="section problems" id="problems">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow"><span class="eyebrow__en">PROBLEM</span>こんな課題はありませんか</p>
+          <h2 class="section-title">社内の色補正、<br class="sp-only">このままでいいですか？</h2>
+        </header>
+
+        <ul class="problem-list">
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>色補正のために、担当者の人件費が毎月かかり続けている</p>
+          </li>
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>担当者が休んだり辞めたりすると、商品画像の更新が止まってしまう</p>
+          </li>
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>新作やカラバリが重なる時期は、補正が追いつかない</p>
+          </li>
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>仕上がりの基準が担当者の感覚頼みで、ほかの人に引き継げない</p>
+          </li>
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>同業他社はAIで効率化していると聞くが、現場は「AIだと歪む」と慎重</p>
+          </li>
+          <li class="problem">
+            <span class="problem__check" aria-hidden="true"></span>
+            <p>「画像と色が違う」というレビューや返品がなくならない</p>
+          </li>
+        </ul>
+
+        <p class="problems__answer">
+          色補正は、もう<br class="sp-only"><strong>社内で抱えなくていい</strong>。
+        </p>
+        <p class="problems__sub">AIを最大限に活用したクロマフィックスなら、品質はそのままに、コストも属人化も手放せます。</p>
+      </div>
+    </section>
+
+    <!-- ============ COST ============ -->
+    <section class="section cost" id="cost">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__en">01 — COST</span>コスト比較</p>
+          <h2 class="section-title">手取り35万円の担当者、<br>会社の負担は月<span class="num-em">約52</span>万円。</h2>
+          <p class="section-lead">
+            社員の人件費は、手取り額だけではありません。本人が負担する税金・社会保険料に、会社が負担する社会保険料を加えると、
+            実際にかかっている金額は<strong>手取りのおよそ1.5倍</strong>。色補正の担当者を1名置くだけで、年間600万円を超えることもあります。
+          </p>
+        </header>
+
+        <div class="cost__grid">
+          <div class="sim" data-sim data-price="25">
+            <div class="sim__head">
+              <label class="sim__label" for="sim-range">いまの担当者の手取り月額</label>
+              <output class="sim__value" for="sim-range" data-sim-takehome><span class="mono">35</span>万円</output>
+            </div>
+            <input class="sim__range" id="sim-range" type="range" min="20" max="60" step="1" value="35" data-sim-range aria-describedby="sim-note">
+            <div class="sim__scale" aria-hidden="true"><span>20万円</span><span>60万円</span></div>
+
+            <dl class="sim__rows">
+              <div class="sim__row"><dt><i class="dot dot--net"></i>手取り</dt><dd><span data-out="net">35</span>万円</dd></div>
+              <div class="sim__row"><dt><i class="dot dot--tax"></i>本人負担の税金・社会保険料</dt><dd>約<span data-out="tax">10</span>万円</dd></div>
+              <div class="sim__row"><dt><i class="dot dot--co"></i>会社負担の社会保険料</dt><dd>約<span data-out="co">7</span>万円</dd></div>
+              <div class="sim__row sim__row--total"><dt>会社が負担する人件費（月）</dt><dd>約<span data-out="month">52</span>万円</dd></div>
+            </dl>
+
+            <div class="sim__compare">
+              <p class="sim__compare-title">年間のコスト</p>
+              <div class="bar-row">
+                <span class="bar-row__label">社内の担当者</span>
+                <span class="bar-row__track"><span class="bar-row__bar bar-row__bar--staff" data-bar="staff"><span class="bar-row__seg bar-row__seg--net" data-seg="net"></span><span class="bar-row__seg bar-row__seg--tax" data-seg="tax"></span><span class="bar-row__seg bar-row__seg--co" data-seg="co"></span></span></span>
+                <span class="bar-row__value">約<span data-out="year">622</span>万円</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-row__label">ChromaFix</span>
+                <span class="bar-row__track"><span class="bar-row__bar bar-row__bar--us" data-bar="us"></span></span>
+                <span class="bar-row__value"><span data-out="usyear">300</span>万円</span>
+              </div>
+              <p class="sim__diff">差額 <strong>年間 約<span data-out="diff">322</span>万円</strong> の削減</p>
+            </div>
+            <p class="sim__note" id="sim-note">※手取りから逆算した目安の概算です。賞与・通勤手当、PC・画像編集ソフト・モニターなどの設備費、採用・教育の費用は含みません。ChromaFixの料金は税別で比較しています。</p>
+          </div>
+
+          <div class="saving">
+            <p class="saving__label">ChromaFixの料金</p>
+            <p class="saving__price"><span class="saving__pre">月額</span><span class="saving__num">25</span><span class="saving__unit">万円</span><span class="saving__tax">（税別）</span></p>
+            <p class="saving__desc">定額制。初回3枚の無料トライアルで、仕上がりを確かめてからご契約いただけます。</p>
+
+            <div class="saving__claim">
+              <p>社内で担当者を雇用する場合と比べて</p>
+              <p class="saving__claim-big">年間<strong>100万円以上</strong>の<br class="sp-only">コスト削減<sup>※</sup></p>
+              <p class="saving__ref">※手取り月35万円の担当者1名との比較。手取り額だけで比べても年120万円、会社負担の人件費で比べると年間約320万円の差になります。</p>
+            </div>
+
+            <h3 class="saving__list-title">月額料金に含まれる作業</h3>
+            <ul class="saving__list">
+              <li>色補正・現物へのカラーマッチング</li>
+              <li>カラバリのトーン統一</li>
+              <li>背景の白抜き・切り抜き</li>
+              <li>ゴミ・ホコリの除去</li>
+              <li>モール規定サイズでの書き出し</li>
+            </ul>
+            <p class="saving__extra">担当者の休みや退職で、画像の更新が止まる心配もなくなります。</p>
+            <a class="btn btn--primary btn--lg btn--block" href="#contact">
+              無料トライアルを申し込む
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI ============ -->
+    <section class="section ai" id="ai">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__en">02 — AI</span>AI補正のしくみ</p>
+          <h2 class="section-title">「AIだと歪む」は、<br>もう心配いりません。</h2>
+          <p class="section-lead">
+            AIで靴の形が歪んだり、ロゴが崩れたりするのは、画像をまるごと“描き直す”タイプの生成AIを使った場合です。
+            クロマフィックスのAIは、写真を描き直しません。<strong>ピクセルの位置はそのままに、色の値だけを補正します。</strong>
+          </p>
+        </header>
+
+        <ol class="ai__points">
+          <li class="ai-point">
+            <p class="ai-point__no mono">01</p>
+            <h3>写真を描き直さない</h3>
+            <p>調整するのは色だけ。靴の形・ロゴ・ステッチ・素材の凹凸には一切手を加えないため、形が変わることはありません。</p>
+          </li>
+          <li class="ai-point">
+            <p class="ai-point__no mono">02</p>
+            <h3>靴のパーツを自動で認識</h3>
+            <p>アッパー、オーバーレイ、ソール、背景などをAIが自動で切り分け、素材ごとに最適な補正をかけます。</p>
+          </li>
+          <li class="ai-point">
+            <p class="ai-point__no mono">03</p>
+            <h3>ブランドの基準色で統一</h3>
+            <p>現物サンプルや既存の画像から基準色を決め、すべての画像をその基準で仕上げます。担当者の感覚に頼りません。</p>
+          </li>
+          <li class="ai-point">
+            <p class="ai-point__no mono">04</p>
+            <h3>専門スタッフが最終チェック</h3>
+            <p>AIが補正した画像は、色補正の専門スタッフが確認してから納品。AIの効率と人の目の確かさを両立します。</p>
+          </li>
+        </ol>
+
+        <div class="compare">
+          <table class="compare__table">
+            <caption class="compare__caption">画像を描き直す生成AIとのちがい</caption>
+            <colgroup><col class="c-head"><col><col></colgroup>
+            <thead>
+              <tr><th scope="col"><span class="visually-hidden">項目</span></th><th scope="col">画像を描き直す<br class="sp-only">生成AI</th><th scope="col" class="is-us">ChromaFix</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">靴の形</th><td><span class="mark mark--ng" aria-hidden="true">△</span>変わることがある</td><td class="is-us"><span class="mark mark--ok" aria-hidden="true">◎</span>変わらない</td></tr>
+              <tr><th scope="row">ロゴ・文字・ステッチ</th><td><span class="mark mark--ng" aria-hidden="true">△</span>崩れることがある</td><td class="is-us"><span class="mark mark--ok" aria-hidden="true">◎</span>そのまま</td></tr>
+              <tr><th scope="row">色の基準</th><td><span class="mark mark--ng" aria-hidden="true">△</span>指示のたびにばらつく</td><td class="is-us"><span class="mark mark--ok" aria-hidden="true">◎</span>ブランドの基準色で統一</td></tr>
+              <tr><th scope="row">仕上がりの確認</th><td><span class="mark mark--ng" aria-hidden="true">△</span>自社で行う</td><td class="is-us"><span class="mark mark--ok" aria-hidden="true">◎</span>専門スタッフが確認</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ai__cta">
+          <p>現場の担当者の方にも、<strong>実際の仕上がり</strong>で判断していただけます。</p>
+          <a class="btn btn--light btn--lg" href="#contact">無料トライアルを申し込む</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASES ============ -->
+    <section class="section cases" id="cases">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__en">03 — CASES</span>補正事例</p>
+          <h2 class="section-title">形はそのまま、<br class="sp-only">色だけを直す。</h2>
+          <p class="section-lead">画像の上をドラッグ（スワイプ）して見比べてください。靴の形やロゴには手を加えず、色だけを補正しています。</p>
+        </header>
+
+        <div class="case-grid">
+          <article class="case">
+            <div class="ba ba--wide" data-ba>
+              <img class="ba__img" src="assets/img/case-black-after.webp" width="1200" height="900" loading="lazy" alt="補正後：白背景に、黒いメッシュの質感とピンクの差し色がはっきり見える">
+              <div class="ba__before">
+                <img class="ba__img" src="assets/img/case-black-before.webp" width="1200" height="900" loading="lazy" alt="補正前：露出不足で背景がグレーになり、黒い部分がつぶれている">
+              </div>
+              <span class="ba__label ba__label--before">BEFORE</span>
+              <span class="ba__label ba__label--after">AFTER</span>
+              <div class="ba__handle" role="slider" tabindex="0" aria-label="事例1 補正前と補正後の比較スライダー" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__no mono">CASE 01</p>
+              <h3 class="case__title">黒い靴の「黒つぶれ」</h3>
+              <p class="case__issue">露出不足で背景はグレーに。アッパーの黒がつぶれ、メッシュの質感が見えない状態でした。</p>
+              <ul class="case__fix">
+                <li>背景をRGB 255の白へ</li>
+                <li>黒の締まりを残したまま、シャドウを起こして素材感を復元</li>
+                <li>差し色のピンクを実物の発色に</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="ba ba--wide" data-ba>
+              <img class="ba__img" src="assets/img/case-pink-after.webp" width="1200" height="900" loading="lazy" alt="補正後：アッパーが実物どおりの淡いピンクになっている">
+              <div class="ba__before">
+                <img class="ba__img" src="assets/img/case-pink-before.webp" width="1200" height="900" loading="lazy" alt="補正前：蛍光灯の緑かぶりで、ピンクがくすんだベージュに見える">
+              </div>
+              <span class="ba__label ba__label--before">BEFORE</span>
+              <span class="ba__label ba__label--after">AFTER</span>
+              <div class="ba__handle" role="slider" tabindex="0" aria-label="事例2 補正前と補正後の比較スライダー" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+              </div>
+            </div>
+            <div class="case__body">
+              <p class="case__no mono">CASE 02</p>
+              <h3 class="case__title">蛍光灯による「色かぶり」</h3>
+              <p class="case__issue">蛍光灯の緑かぶりで、淡いピンクがくすんだベージュに。ソールや背景も緑がかっていました。</p>
+              <ul class="case__fix">
+                <li>グレーバランスを整えて色かぶりを除去</li>
+                <li>アッパーのピンクを現物サンプルにカラーマッチング</li>
+                <li>ソールの白を色転びなく再現</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <article class="case case--lineup">
+          <div class="case__body">
+            <p class="case__no mono">CASE 03</p>
+            <h3 class="case__title">カラバリの「トーン統一」</h3>
+            <p class="case__issue">3色を別々の日・別々の場所で撮影。一覧ページに並べると、明るさも白の色もバラバラでした。</p>
+            <ul class="case__fix">
+              <li>背景とソールの白を基準に、3枚のトーンを統一</li>
+              <li>各色の発色は、それぞれの実物に合わせて補正</li>
+            </ul>
+          </div>
+
+          <div class="lineup" data-lineup>
+            <div class="lineup__bar">
+              <span class="lineup__shop mono">SHOP / NEW ARRIVALS</span>
+              <div class="seg" role="group" aria-label="表示の切り替え">
+                <button type="button" class="seg__btn" aria-pressed="true" data-show="before">補正前</button>
+                <button type="button" class="seg__btn" aria-pressed="false" data-show="after">補正後</button>
+              </div>
+            </div>
+            <ul class="lineup__grid">
+              <li class="lineup__item">
+                <div class="lineup__img">
+                  <img class="is-before" src="assets/img/lineup-blue-before.webp" width="640" height="640" loading="lazy" alt="補正前：青いスニーカー。青かぶりで白っぽく見える">
+                  <img class="is-after" src="assets/img/lineup-blue-after.webp" width="640" height="640" loading="lazy" alt="補正後：青いスニーカー">
+                </div>
+                <p class="lineup__name">RUNNER LITE</p>
+                <p class="lineup__meta">ブルー<span>¥8,900</span></p>
+              </li>
+              <li class="lineup__item">
+                <div class="lineup__img">
+                  <img class="is-before" src="assets/img/lineup-pink-before.webp" width="640" height="640" loading="lazy" alt="補正前：ピンクのスニーカー。黄色かぶりでオレンジがかって見える">
+                  <img class="is-after" src="assets/img/lineup-pink-after.webp" width="640" height="640" loading="lazy" alt="補正後：ピンクのスニーカー">
+                </div>
+                <p class="lineup__name">RUNNER LITE</p>
+                <p class="lineup__meta">ピンク<span>¥8,900</span></p>
+              </li>
+              <li class="lineup__item">
+                <div class="lineup__img">
+                  <img class="is-before" src="assets/img/lineup-black-before.webp" width="640" height="640" loading="lazy" alt="補正前：黒いスニーカー。緑かぶりで背景も緑がかっている">
+                  <img class="is-after" src="assets/img/lineup-black-after.webp" width="640" height="640" loading="lazy" alt="補正後：黒いスニーカー">
+                </div>
+                <p class="lineup__name">RUNNER LITE</p>
+                <p class="lineup__meta">ブラック<span>¥8,900</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <p class="note">※掲載している画像は、補正内容をご説明するためのサンプルです。商品名・価格は架空のものです。</p>
+      </div>
+    </section>
+
+    <!-- ============ PARTS / WHY SHOES ============ -->
+    <section class="section parts" id="parts">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__en">04 — WHY SHOES</span>靴専門の理由</p>
+          <h2 class="section-title">1足の靴に、<br>色はひとつじゃない。</h2>
+          <p class="section-lead">
+            靴は、商品画像のなかでも色補正が難しいジャンルです。アッパー、オーバーレイ、ライニング、ソール。
+            素材が違えば、光の反射も、色の転び方もまったく違います。画像全体に同じ補正をかけると、どこかのパーツが必ず不自然になる。
+            だからクロマフィックスは、<strong>靴のパーツごとに範囲を切り分けて、ひとつずつ実物の色へ合わせます。</strong>
+          </p>
+        </header>
+
+        <div class="parts__body">
+          <figure class="parts__figure">
+            <img src="assets/img/parts-side.webp" width="1600" height="900" loading="lazy" alt="スニーカーの側面。アッパー、オーバーレイ、シューレース、ヒール周り、ミッドソール、背景の6か所に番号が付いている">
+            <ol class="pins" aria-hidden="true">
+              <li class="pin" style="--x:74%;--y:56%">1</li>
+              <li class="pin" style="--x:43%;--y:65%">2</li>
+              <li class="pin" style="--x:55%;--y:43%">3</li>
+              <li class="pin" style="--x:14%;--y:43%">4</li>
+              <li class="pin" style="--x:61%;--y:87%">5</li>
+              <li class="pin" style="--x:90%;--y:18%">6</li>
+            </ol>
+          </figure>
+
+          <ol class="parts__legend">
+            <li><span class="num">1</span><div><h3>アッパー<small>メッシュ</small></h3><p>編み目の陰影は残したまま、色かぶりだけを取り除いて生地本来の色へ。</p></div></li>
+            <li><span class="num">2</span><div><h3>オーバーレイ<small>合成皮革</small></h3><p>艶のハイライトを飛ばさず、ネイビーの深みを再現します。</p></div></li>
+            <li><span class="num">3</span><div><h3>シューレース<small>ポリエステル</small></h3><p>黒を「真っ黒」にせず、撚りの立体感が見える締まりに。</p></div></li>
+            <li><span class="num">4</span><div><h3>ヒール周り<small>ライニング</small></h3><p>暗部に埋もれやすいパーツも、ディテールを起こして見せます。</p></div></li>
+            <li><span class="num">5</span><div><h3>ミッドソール<small>フォーム</small></h3><p>黄ばみやグレーかぶりを取り、素材そのものの白に。</p></div></li>
+            <li><span class="num">6</span><div><h3>背景<small>白抜き</small></h3><p>RGB 255の純白に。モールの画像規定にもそのまま対応します。</p></div></li>
+          </ol>
+        </div>
+
+        <div class="materials">
+          <h3 class="materials__title">素材別の補正ノウハウ</h3>
+          <ul class="materials__grid">
+            <li class="material">
+              <span class="material__swatch material__swatch--leather" aria-hidden="true"></span>
+              <h4>スムースレザー</h4>
+              <p>艶やシワの陰影を残したまま、染料の深みを再現。テカリによる白飛びも抑えます。</p>
+            </li>
+            <li class="material">
+              <span class="material__swatch material__swatch--suede" aria-hidden="true"></span>
+              <h4>スエード・ヌバック</h4>
+              <p>光の向きで明るさが変わる起毛素材。毛並みの陰影を活かしながら、実物の色に合わせます。</p>
+            </li>
+            <li class="material">
+              <span class="material__swatch material__swatch--patent" aria-hidden="true"></span>
+              <h4>エナメル（パテント）</h4>
+              <p>強い映り込みを整理して、鏡面の艶と本来の色を両立させます。</p>
+            </li>
+            <li class="material">
+              <span class="material__swatch material__swatch--mesh" aria-hidden="true"></span>
+              <h4>メッシュ・ニット</h4>
+              <p>細かな編み目のモアレや色にじみを抑え、素材感をクリアに見せます。</p>
+            </li>
+            <li class="material">
+              <span class="material__swatch material__swatch--canvas" aria-hidden="true"></span>
+              <h4>キャンバス・ファブリック</h4>
+              <p>ホワイト、オフホワイト、生成り。近い色の違いを取り違えずに描き分けます。</p>
+            </li>
+            <li class="material">
+              <span class="material__swatch material__swatch--rubber" aria-hidden="true"></span>
+              <h4>ラバー・ソール</h4>
+              <p>黄ばんで見えやすい白ソールや、ガムソールの飴色を正確に再現します。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FLOW ============ -->
+    <section class="section flow" id="flow">
+      <div class="container">
+        <header class="section-head section-head--center">
+          <p class="eyebrow"><span class="eyebrow__en">05 — FLOW</span>ご依頼の流れ</p>
+          <h2 class="section-title">まずは無料トライアルから。</h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <p class="step__no mono">STEP 01</p>
+            <h3>お問い合わせ</h3>
+            <p>フォームから、商品のジャンルと月あたりのおおよその枚数をお知らせください。</p>
+          </li>
+          <li class="step">
+            <p class="step__no mono">STEP 02</p>
+            <h3>無料トライアル</h3>
+            <p>実際の商品画像を3枚まで無料で補正。担当者の方と一緒に仕上がりをご確認ください。</p>
+          </li>
+          <li class="step">
+            <p class="step__no mono">STEP 03</p>
+            <h3>お見積り・ご契約</h3>
+            <p>月あたりの枚数と作業内容をうかがい、ご契約内容を決めます。</p>
+          </li>
+          <li class="step">
+            <p class="step__no mono">STEP 04</p>
+            <h3>基準色のすり合わせ</h3>
+            <p>現物サンプルや既存の画像をもとに、ブランドの基準色を決めます。</p>
+          </li>
+          <li class="step">
+            <p class="step__no mono">STEP 05</p>
+            <h3>運用スタート</h3>
+            <p>画像をお送りいただくだけ。補正済みの画像を納品します。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <header class="section-head section-head--center">
+          <p class="eyebrow"><span class="eyebrow__en">06 — FAQ</span>よくあるご質問</p>
+          <h2 class="section-title">よくあるご質問</h2>
+        </header>
+
+        <div class="faq__list">
+          <details class="qa">
+            <summary>AIで補正すると、靴の形が歪んだりしませんか？</summary>
+            <div class="qa__a"><p>歪みません。クロマフィックスのAIは画像を描き直すのではなく、色の値だけを補正します。形・ロゴ・ステッチの位置は元の写真のままです。補正後の画像は専門スタッフが確認してから納品します。</p></div>
+          </details>
+          <details class="qa">
+            <summary>いまの担当者と同じ品質を保てますか？</summary>
+            <div class="qa__a"><p>無料トライアルで、現在の仕上がりと見比べてご判断ください。既存の画像や現物サンプルをもとにブランドの基準色をすり合わせ、その基準ですべての画像を仕上げます。</p></div>
+          </details>
+          <details class="qa">
+            <summary>料金はいくらですか？</summary>
+            <div class="qa__a"><p>月額25万円（税別）の定額制です。社内で担当者1名（手取り月35万円）が色補正を行っている場合と比べて、年間100万円以上のコスト削減になります。月あたりの枚数や作業内容については、お問い合わせの際にご相談ください。</p></div>
+          </details>
+          <details class="qa">
+            <summary>無料トライアルでは何をしてもらえますか？</summary>
+            <div class="qa__a"><p>初めてのお客様に限り、実際の商品画像を3枚まで無料で補正します。仕上がりをご確認いただいてから、ご契約をご検討ください。</p></div>
+          </details>
+          <details class="qa">
+            <summary>納期はどのくらいですか？</summary>
+            <div class="qa__a"><p>通常は2〜3営業日で納品します。お急ぎの場合は特急対応（最短12時間）も可能です。新作の発売時期など、枚数が多い場合はスケジュールをご相談ください。</p></div>
+          </details>
+          <details class="qa">
+            <summary>現物を送れば、その色に合わせてもらえますか？</summary>
+            <div class="qa__a"><p>はい。現物サンプルをお預かりし、実物を確認しながら基準色を決めます。お預かりした商品は、確認後にご返送します。</p></div>
+          </details>
+          <details class="qa">
+            <summary>どんな形式の画像に対応していますか？</summary>
+            <div class="qa__a"><p>JPEG・PNG・TIFF・PSDのほか、各社カメラのRAWデータにも対応しています。納品時の形式・サイズ・ファイル名のルールもご指定いただけます。</p></div>
+          </details>
+          <details class="qa">
+            <summary>発売前の商品の画像でも大丈夫ですか？</summary>
+            <div class="qa__a"><p>秘密保持契約（NDA）の締結に対応しています。お預かりした画像データは、納品後一定期間を経て削除します。</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__en">CONTACT</span>お問い合わせ</p>
+          <h2 class="section-title">まずは3枚、<br>無料でお試しください。</h2>
+          <p class="contact__lead">実際の商品画像で、仕上がりをご確認いただけます。担当者の方と一緒にご判断ください。お見積りやご相談だけでも、お気軽にどうぞ。原則1営業日以内にご返信します。</p>
+          <ul class="contact__points">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>初回3枚まで無料</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>月額25万円（税別）の定額制</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>NDA締結にも対応</li>
+          </ul>
+          <p class="contact__sub">トライアル用の画像は、ご返信の際にご案内する方法でお送りください。</p>
+        </div>
+
+        <form class="form" action="contact.php" method="post" novalidate data-form>
+          <fieldset class="form__field">
+            <legend class="form__label">ご用件<span class="req">必須</span></legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="type" value="trial" checked><span>無料トライアル</span></label>
+              <label class="chip"><input type="radio" name="type" value="estimate"><span>お見積り</span></label>
+              <label class="chip"><input type="radio" name="type" value="other"><span>その他のご相談</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="f-company">会社名・ブランド名<span class="opt">任意</span></label>
+              <input class="input" id="f-company" name="company" type="text" maxlength="100" autocomplete="organization" placeholder="例）株式会社〇〇シューズ">
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="f-name">お名前<span class="req">必須</span></label>
+              <input class="input" id="f-name" name="name" type="text" maxlength="50" autocomplete="name" required placeholder="例）山田 太郎">
+              <p class="form__error" data-error-for="name"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="f-email">メールアドレス<span class="req">必須</span></label>
+              <input class="input" id="f-email" name="email" type="email" maxlength="254" autocomplete="email" inputmode="email" required placeholder="例）info@example.com">
+              <p class="form__error" data-error-for="email"></p>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="f-tel">電話番号<span class="opt">任意</span></label>
+              <input class="input" id="f-tel" name="tel" type="tel" maxlength="20" autocomplete="tel" inputmode="tel" placeholder="例）078-123-4567">
+              <p class="form__error" data-error-for="tel"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label class="form__label" for="f-current">いまの色補正の体制<span class="opt">任意</span></label>
+              <div class="select">
+                <select class="input" id="f-current" name="current">
+                  <option value="">選択してください</option>
+                  <option value="staff">社内の担当者が行っている</option>
+                  <option value="photographer">撮影担当者が兼任している</option>
+                  <option value="outsource">外注している</option>
+                  <option value="none">特に補正していない</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="f-volume">月あたりの枚数<span class="opt">任意</span></label>
+              <div class="select">
+                <select class="input" id="f-volume" name="volume">
+                  <option value="">選択してください</option>
+                  <option value="lt100">〜100枚</option>
+                  <option value="100-300">100〜300枚</option>
+                  <option value="300-1000">300〜1,000枚</option>
+                  <option value="gt1000">1,000枚以上</option>
+                  <option value="unknown">わからない</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="f-message">ご相談内容<span class="opt">任意</span></label>
+            <textarea class="input" id="f-message" name="message" rows="5" maxlength="3000" placeholder="取り扱っている靴のジャンル、いまお困りのこと、ご希望の開始時期などをご記入ください。"></textarea>
+            <p class="form__error" data-error-for="message"></p>
+          </div>
+
+          <!-- スパム対策（人間には見えない項目です。入力しないでください） -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-website">Website</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form__field">
+            <label class="check">
+              <input type="checkbox" name="agree" value="1" required>
+              <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span>
+            </label>
+            <p class="form__error" data-error-for="agree"></p>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit" data-submit>
+            送信する
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form__status" role="status" aria-live="polite" data-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <a class="brand brand--footer" href="#top" aria-label="ChromaFix トップへ">
+            <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="13" height="13" rx="3" fill="#E4572E"/><rect x="17" y="2" width="13" height="13" rx="3" fill="#F2B632"/><rect x="2" y="17" width="13" height="13" rx="3" fill="#1580B7"/><rect x="17" y="17" width="13" height="13" rx="3" fill="#8A8D91"/></svg>
+            <span class="brand__text">
+              <span class="brand__name">ChromaFix</span>
+              <span class="brand__kana">クロマフィックス</span>
+            </span>
+          </a>
+          <p class="site-footer__tagline">靴メーカーのためのAI色補正サービス</p>
+        </div>
+        <nav aria-label="フッターメニュー">
+          <ul class="site-footer__nav">
+            <li><a href="#cost">コスト比較</a></li>
+            <li><a href="#ai">AI補正のしくみ</a></li>
+            <li><a href="#cases">補正事例</a></li>
+            <li><a href="#parts">靴専門の理由</a></li>
+            <li><a href="#flow">ご依頼の流れ</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="site-footer__credit">
+        掲載しているサンプル画像は、3Dモデル「Materials Variants Shoe」（© 2021 Shopify／<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener">CC BY 4.0</a>）をもとに作成・加工したものです。
+      </p>
+      <p class="site-footer__copy">© <span data-year>2026</span> ChromaFix</p>
+    </div>
+    <div class="colorbar colorbar--bottom" aria-hidden="true"></div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
